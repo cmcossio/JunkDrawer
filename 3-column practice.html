@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  background-color: black; /* for contrast */
+}
+
+.column {
+  width: 33.33%;	/* equal width columns */
+  padding: 10px;	/* space between image and edge */
+  border: 5px solid white	/* white space around columns */
+}
+.image {
+  width:85%;		/* resize image */
+  display: block;	/* to center image */
+  margin: auto;		/* to center image */
+  
+}
+
+.row {
+  display: flex;	/* columns & images on same line */
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column" style="background-color: red"> <!--column background-->
+    <img class="image" src="https://pbs.twimg.com/profile_images/3640959094/7b13eeca2ff447c5c263457d62696e3c_400x400.jpeg" alt="basketball">
+  </div>
+  <div class="column" style="background-color: green"> <!--column background-->
+    <img class="image" src="https://www.balloonsandweights.com/wp-content/uploads/2014/10/Mini-Foam-Soccer-Ball-Back-Side-BalloonsAndWeights.com_.jpg" alt="soccer">
+  </div>
+  <div class="column" style="background-color: blue"> <!--column background-->
+    <img class="image" src="https://www.itsmyne.co.uk/pub/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/g/o/golf-ball-rofw-41.1mm_1_.jpg" alt="golf">
+  </div>
+</div>
+
+</body>
+</html>
+
+<!--For column background color I added style directly to the <div> html elements since a different
+    color was required for each; alternatively, I could have created 3 separate classes (which seems inefficient).
+    Is adding style in the html frowned upon? Can you suggest a better way?-->
